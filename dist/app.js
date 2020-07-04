@@ -23,7 +23,6 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           const { icon } = data.data[0].weather;
           let iconUrl = ` https://www.weatherbit.io/static/img/icons/${icon}.png`;
           var image = document.createElement("IMG", iconUrl);
@@ -35,7 +34,6 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           const {
             temperature,
             weather_descriptions,
