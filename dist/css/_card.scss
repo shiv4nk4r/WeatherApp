@@ -1,0 +1,134 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #53a9ff;
+  color: #fff;
+  min-height: 70vh;
+  width: 40%;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgb(173, 173, 173);
+  .loc-wrapper {
+    width: 100%;
+
+    background: #0984e3;
+    padding: 30px 0px;
+    .location {
+      margin: auto;
+      min-height: 20vh;
+      width: 80%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      .location-timezone {
+        flex: 1;
+        font-size: 6rem;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      span {
+        height: 60px;
+        width: 60px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .temperature {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    .degree-section {
+      display: flex;
+      span {
+        font-size: 3rem;
+        margin: 10px;
+      }
+      .temperature-degree {
+        flex: 1;
+        font-size: 28rem;
+      }
+    }
+    .temperature-description {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0px 10%;
+      font-size: 4rem;
+      .humidity {
+        padding: 0px 10px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        strong {
+          font-size: 3rem;
+          font-weight: 400;
+        }
+      }
+      .feels-like {
+        font-size: 1.5rem;
+        span {
+          font-weight: 500;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 90%;
+    font-size: 50%;
+    .loc-wrapper {
+      .location {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          flex: 1;
+        }
+      }
+    }
+    .temperature {
+      .degree-section {
+        .temperature-degree {
+          font-size: 15rem;
+        }
+      }
+      .temperature-description {
+        flex-direction: column;
+        align-items: flex-start;
+        .feels-like {
+          padding: 10px 0px;
+        }
+        .humidity {
+          padding: 10px 0px;
+        }
+        .temp-desc-text {
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,247 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  color: #fff;
+  background: #1b1b1b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  position: fixed;
+  padding: 15px 0px;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.hero strong {
+  font-weight: 400;
+}
+
+.hero strong a {
+  color: #fff;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #53a9ff;
+  color: #fff;
+  min-height: 70vh;
+  width: 40%;
+  border-radius: 50px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px #adadad;
+          box-shadow: 0px 0px 5px #adadad;
+}
+
+.card .loc-wrapper {
+  width: 100%;
+  background: #0984e3;
+  padding: 30px 0px;
+}
+
+.card .loc-wrapper .location {
+  margin: auto;
+  min-height: 20vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .loc-wrapper .location .location-timezone {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card .loc-wrapper .location span {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .loc-wrapper .location span img {
+  height: 100%;
+  width: 100%;
+}
+
+.card .temperature {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+}
+
+.card .temperature .degree-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .temperature .degree-section span {
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.card .temperature .degree-section .temperature-degree {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 28rem;
+}
+
+.card .temperature .temperature-description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10%;
+  font-size: 4rem;
+}
+
+.card .temperature .temperature-description .humidity {
+  padding: 0px 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card .temperature .temperature-description .humidity strong {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.card .temperature .temperature-description .feels-like {
+  font-size: 1.5rem;
+}
+
+.card .temperature .temperature-description .feels-like span {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 90%;
+    font-size: 50%;
+  }
+  .card .loc-wrapper .location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .loc-wrapper .location span {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .card .temperature .degree-section .temperature-degree {
+    font-size: 15rem;
+  }
+  .card .temperature .temperature-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card .temperature .temperature-description .feels-like {
+    padding: 10px 0px;
+  }
+  .card .temperature .temperature-description .humidity {
+    padding: 10px 0px;
+  }
+  .card .temperature .temperature-description .temp-desc-text {
+    padding: 10px 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

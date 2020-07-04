@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #fff;
+  background: #1b1b1b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  position: fixed;
+  padding: 15px 0px;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 200;
+  strong {
+    font-weight: 400;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@import "card";
