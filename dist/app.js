@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      const api = `http://api.weatherstack.com/current?access_key=117ebbf151010bd5bf793bdb46e6c4f3&query=${lat},${long}`;
+      const api = `http://api.weatherstack.com/current?access_key=5fc3616f78dfc488d37659a924a52306&query=${lat},${long}`;
       const apiRequest = `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${long}&key=61a02e080ec74e998b12154b8fda95c4`;
       fetch(apiRequest)
         .then((response) => {
